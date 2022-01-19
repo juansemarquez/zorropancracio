@@ -1,0 +1,156 @@
+body {
+	background-color: #afebf0;
+	font-family: Arial,Helvetica,sans-serif;
+}
+
+#container {
+	margin: 60px;
+}
+
+#main {
+	padding: 6px;
+	background-color: #67b2b8;
+	text-align: center;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#pistas {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+	clear: both;
+	border-collapse: collapse;
+}
+
+#pistas tr th {
+	background-color: #cccccc;
+	text-align: center;
+}
+
+#pistas tr.par td {
+	background-color: #ccffff;
+	padding-left: 10px;
+}
+
+#pistas tr.impar td {
+	background-color: #cceeee;
+	padding-left: 10px;
+}
+
+.icono {
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.icono a img {
+	border-style: none;
+}
+
+#mensaje {
+	font-weight: bold;
+	color: red;
+	padding: 6px;
+	background-color: #ffff66;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#main h1 {
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-family: Arial,Helvetica,sans-serif;
+	font-weight: inherit;
+	font-size: 3em;
+}
+
+#alta_de_pista {
+	float: left;
+	margin-left: 200px;
+}
+
+#cerrar {
+	float: right;
+	margin-right: 200px;
+}
+
+#alta_de_pista a, #cerrar a, #alta_de_pista a:visited, #cerrar a:visited {
+	border: 3px solid #ff9900;
+	padding: 4px 10px;
+	text-decoration: none;
+	background-color: #ffff66;
+	color: black;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#alta_de_pista a:hover, #cerrar a:hover {
+	color: #ffff66;
+	background-color: black;
+}
+
+#texto_de_la_pista {
+	width: 350px;
+}
+
+footer {
+	text-align: center;
+}
+
+#reg {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#reg tr td.dcha {
+	text-align: left;
+}
+
+#reg tr td.izq {
+	text-align: right;
+}
+
+#reg tr td.dcha input {
+	width: 250px;
+}
+
+#consejos {
+	color: black;
+	padding: 6px 20px;
+	background-color: #ffff66;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	margin: 10px 160px;
+	text-align: left;
+}
+
+#consejos h3 {
+	text-align: center;
+}
+
+#codigo_para_jugar {
+	font-size: 130%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	padding: 4px 10px;
+	text-decoration: none;
+	background-color: white;
+	/*  background-color: #ffff66;*/
+    color: black;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#codigo_para_jugar strong {
+	display: block;
+	font-size: 150%;
+}

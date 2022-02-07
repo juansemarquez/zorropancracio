@@ -45,22 +45,28 @@ if($destino == $itinerario[$paso]) {
 		//Recibe por post nombre, km y base (no me acuerdo si son los nombres correctos).
 		if(isset($nombre)&&isset($kmtotal)&&isset($base)) {
 			
-			conectar();
+			$con = conectar();
 			
 			//Obtengo la tabla de "high scores"
-			$sql="select id,nombre,km from posiciones where base=$base order by km ASC";
-			$result=mysql_query($sql);
+			$sql="select id,nombre,km from posiciones where base=? order by km ASC";
+            $query = $con->prepare($sql);
+            $query->bind_param("i", $base);
+            $query->execute();
+            $query->bind_result($id_, $nombre_, $km_);
 			$band=$contador=$cont_posicion=0;
 			
-			while($fila=mysql_fetch_array($result)) {
+			while($query->fetch()) {
 				$contador++;
-				if($km<$fila['km'] && !$band) {$band=1;$cont_posicion=$contador;}
-				if($contador==$config['total'] && $band) mysql_query("delete from posiciones where id=".$fila['id']);
+				if($km<$km_ && !$band) {$band=1;$cont_posicion=$contador;}
+				if($contador==$config['total'] && $band) mysqli_query($con, "delete from posiciones where id=$id_");
 			}
 			
 			if($band||$contador<$config['total']) {
-				$sql2=sprintf("insert into posiciones (nombre,km,base) values ('%s',%d,%d)",mysql_real_escape_string($nombre),$kmtotal+$km,$base);
-				mysql_query($sql2);
+                $sql2= "insert into posiciones (nombre,km,base) values (?,?,?)";
+                $query = $con->prepare($sql2);
+                $kms = $kmtotal + $km;
+                $query->bind_param("sii",$nombre,$kms,$base);
+				$query->execute();
 				if(!$band) $cont_posicion=$contador+1;
 			}
 			

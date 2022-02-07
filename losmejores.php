@@ -1,18 +1,18 @@
 <?php 
 include('includes/bd.php');
-conectar();
+$con = conectar();
 
 
 include('includes/header.php');
 
 if(isset($_GET['base'])) {
-	$base=$_GET['base'];
+	$base=(int) $_GET['base'];
 } else {
 	$base=1;
 }
 
 $sql="select id,nombre,km from posiciones where base=$base order by km ASC";
-$result2=mysql_query($sql);
+$result2=mysqli_query($con, $sql);
 ?>
 <body>
   <header>
@@ -27,7 +27,7 @@ $result2=mysql_query($sql);
 <tr><th>Nombre</th><th>Kilómetros</th></tr>
 <?php
 $j=0;
-while($fila2=mysql_fetch_array($result2)) {
+while($fila2=mysqli_fetch_array($result2)) {
 	$j++;
 	echo "<tr><td>".$fila2['nombre']."</td><td>".$fila2['km']."</tr>\n";
 }

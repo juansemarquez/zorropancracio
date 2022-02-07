@@ -17,7 +17,7 @@ if(isset($cod)) {
 
 if($base==0) {$base=$base2;}
 
-conectar();
+$con = conectar();
 
 if(!validar_base($base)){
 	header('Location: index.php');
@@ -54,8 +54,8 @@ for($i = 1; $i <= $config['pasos']; $i++) {
 }
 
 $sql = "SELECT * from provincias where codigo=" . $viaje[0];
-$resp = mysql_query($sql);
-if($fila = mysql_fetch_array($resp)) {}
+$resp = mysqli_query($con, $sql);
+$fila = mysqli_fetch_array($resp);
 
 ?>
 <?php if(!$config['scrollbars']){ ?>
@@ -100,8 +100,8 @@ if($fila = mysql_fetch_array($resp)) {}
 		</div>
 		<?php
 			$sql = "SELECT * from provincias ORDER BY codigo";
-			$resp = mysql_query($sql);		
-			while($fila = mysql_fetch_array($resp)){
+			$resp = mysqli_query($con, $sql);		
+			while($fila = mysqli_fetch_array($resp)){
 		?>
 		<div class="provincia" id="<?= $fila['div'] ?>" style="background: #67B2B8 url(images/provincias/<?= $fila['div'] ?>.jpg)">
 			<h1><?= $fila['provincia'] ?></h1>

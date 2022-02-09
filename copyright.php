@@ -18,9 +18,9 @@ include('includes/header.php')
 				<h1>Licencia</h1>
 <p class="licencia">Este juego fue desarrollado por Ignacio Giri y Juan S. Marquez en el año 2011.</p>
 <p class="licencia">Copyright 2011 Ignacio Giri, Juan S. Marquez.</p>
-<p class="licencia">Este juego es Software Libre. Se distribuye bajo la licencia GPLv3. Los términos de dicha licencia pueden consultarse <a href="gpl.txt" target="_blank">aquí</a>. (En inglés). Una traducción no-oficial al castellano puede leerse <a href="gpl.html" target="_blank">aquí</a>. La documentación que acompaña a este juego se distribuye bajo la <a href="fdl-1.3.txt" target="_blank">licencia GFDL</a></p>
+<p class="licencia">Este juego es Software Libre. Se distribuye bajo la licencia GPLv3. Los términos de dicha licencia pueden consultarse <a href="LICENSE" target="_blank">aquí</a>. (En inglés). Una traducción no-oficial al castellano puede leerse <a href="gpl.html" target="_blank">aquí</a>. La documentación que acompaña a este juego se distribuye bajo la <a href="fdl-1.3.txt" target="_blank">licencia GFDL</a></p>
 <p class="licencia">Todos los componentes del juego que no son de autoría de Ignacio Giri y Juan S. Marquez, fueron reutilizados con permiso.</p>
-<p class="licencia">Una copia del código fuente de este juego puede obtenerse <a href="fuentes.zip">aquí</a>.</p>
+<p class="licencia">Una copia del código fuente de este juego puede obtenerse <a href="https://github.com/juansemarquez/zorropancracio">aquí</a>.</p>
 				<h1>Reconocimientos</h1>
 				<ul id="enlaces">
 					<li><a href="http://graphicriver.net/item/map-starter-kit/62571">Map Starter Kit</a> by <a href="http://graphicriver.net/user/Weird">Weird</a></li>
@@ -48,7 +48,7 @@ Todas las fotos de las provincias fueron tomadas de <a href="http://commons.wiki
 		</div>			
     </div>
     <footer>
-		por <a href="http://www.twitter.com/profejuanse">Juanse</a> & <a href="http://www.twitter.com/ignaciogiri">Nacho</a>
+		por <a href="http://www.twitter.com/profejuanse">Juanse</a> & <a href="http://www.twitter.com/nacho">Nacho</a>
 		<a id="copyright"href="copyright.php">© Copyright</a>
     </footer>
   </div> <!--! end of #container -->

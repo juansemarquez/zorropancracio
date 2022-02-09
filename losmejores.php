@@ -37,7 +37,7 @@ for($j++;$j<=$config['total'];$j++) 	echo "<tr><td>Vacío</td><td>Vacío</tr>\n"
 </div>			
     </div>
     <footer>
-		por <a href="http://www.twitter.com/profejuanse">Juanse</a> & <a href="http://www.twitter.com/ignaciogiri">Nacho</a>
+		por <a href="http://www.twitter.com/profejuanse">Juanse</a> & <a href="http://www.twitter.com/nacho">Nacho</a>
 		<a id="copyright"href="copyright.php">© Copyright</a>
     </footer>
   </div> <!--! end of #container -->

@@ -41,7 +41,7 @@ include('includes/header.php')
     </div>
     
     <footer>
-		por <a href="http://www.twitter.com/profejuanse">Juanse</a> & <a href="http://www.twitter.com/ignaciogiri">Nacho</a>
+		por <a href="http://www.twitter.com/profejuanse">Juanse</a> & <a href="http://www.twitter.com/nacho">Nacho</a>
 		<a id="copyright"href="copyright.php">© Copyright</a>
     </footer>
   </div> <!--! end of #container -->

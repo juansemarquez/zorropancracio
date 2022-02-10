@@ -1,6 +1,10 @@
 <?php 
 require_once('config.php');
-require_once('credenciales.php');
+if(file_exists('credenciales.php')) {
+    require_once 'credenciales.php';
+} else {
+    require_once('../credenciales.php');
+}
 
 function conectar() {
     $claves = credenciales();

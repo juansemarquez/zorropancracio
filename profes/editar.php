@@ -1,15 +1,15 @@
 <?php 
-include('../includes/bd.php'); 
-include('encabezado.php');
+require_once('../includes/bd.php'); 
+require_once('encabezado.php'); 
 session_start();
-conectar();
+$con = conectar();
 //Valido que la sesión esté iniciada.
 if(isset($_SESSION['usuario'])) {
   $usuario_validado=1;
 } else {$usuario_validado=0;}
 
 if($usuario_validado) {
-	$usuario=nombreRealDelUsuario($_SESSION['usuario']);
+	$usuario=nombreRealDelUsuario($_SESSION['usuario'],$con);
 	if(!isset($usuario)||$usuario=='') $usuario=$_SESSION['usuario'];
 	$titulo="¿Dónde está Pancracio el Zorro? - $usuario";
 	encabezado_profes($titulo);
@@ -37,10 +37,13 @@ if($usuario_validado) {
 	  <?php
 	  if((isset($_GET["pista"])&&isset($_GET["orden"]))) {
 	    //Editando
-	    $base=obtener_base($_SESSION['usuario']);
-	    $sql="SELECT pista from pistas where codigo=".$_GET['pista']." and orden=".$_GET['orden'];
-	    $consulta_pista=mysql_query($sql) or die("Error al cargar la pista");
-	    if($pista=mysql_fetch_array($consulta_pista)) $pista=$pista[0];
+	    $base=obtener_base($_SESSION['usuario'],$con);
+	    $sql="SELECT pista from pistas where codigo=? and orden=?";
+        $q = $con->prepare($sql);
+        $q->bind_param("ii",$_GET['pista'],$_GET['orden']);
+        $q->execute();
+        $q->bind_result($pista);
+        $q->fetch();
 	    echo "<input type=\"hidden\" name=\"e_pista_orig\" value=\"".$_GET['pista']."\">";
 	    echo "<input type=\"hidden\" name=\"e_orden_orig\" value=\"".$_GET['orden']."\">";
 	  } ?>

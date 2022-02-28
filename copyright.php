@@ -32,11 +32,11 @@ include('includes/header.php')
 					<li><a href="http://www.google.com/webfonts/specimen/Permanent+Marker">Permanent Marker</a> by <a href="https://profiles.google.com/fontdiner/about">Font Diner</a> </li>
 					<li><a href="http://www.openclipart.org/detail/143629/edit-pencil-icon-by-darth_schmoo">Dibujo del lápiz: Bryce Anderson / darth_schmoo</a></li>
 					<li><a href="http://www.openclipart.org/detail/110/red-square-error-warning-icon-by-molumen">Cruz de borrar: Lumen Design Studio / molumen</a></li>
-					<li>jQuery 1.6.1</li>
-					<li>Countdown for jQuery v1.5.9</li>
-					<li>jQuery.ScrollTo 1.4.2</li>
-					<li>jQuery.LocalScroll 1.2.7</li>
-					<li>Countdown for jQuery v1.5.9</li>
+					<li>jQuery</li>
+					<li>Countdown for jQuery</li>
+					<li>jQuery.ScrollTo</li>
+					<li>jQuery.LocalScroll</li>
+					<li>Countdown for jQuery</li>
 					<li>Modernizr v1.7</li>
 					<li>HTML5 Boilerplate</li>
 					<li>PHP y MySQL</li>
@@ -52,20 +52,6 @@ Todas las fotos de las provincias fueron tomadas de <a href="http://commons.wiki
 		<a id="copyright"href="copyright.php">© Copyright</a>
     </footer>
   </div> <!--! end of #container -->
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-25422739-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->

@@ -34,8 +34,9 @@
        For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
   <script src="js/modernizr-1.7.min.js"></script>
   <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-ui-1.8.15.custom.min.js"></script>
-  <script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+  <script src="js/jquery-migrate-1.4.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.scrollTo.min.js"></script>
   <script src="js/jquery.localscroll-1.2.7-min.js"></script>
   <script src="js/jquery.flickrshow-7.2.min.js"></script>
   <script src="js/jquery.countdown.min.js"></script>

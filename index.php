@@ -16,7 +16,7 @@ include('includes/header.php')
 		
 			<form action="juego.php" method="post">
 				<div id="pancracio"></div>
-				<h1>¡Bienvenidos al Juego!</h1>
+				<h1>¡Hola! ¿Jugamos?</h1>
 				<fieldset>
 					<label>Ingresá tu nombre:</label>
 					<input type="text" name="nombre" id="nombre">

@@ -8,6 +8,8 @@ Disponible para jugar en
 La idea de este juego no es que cada estudiante conozca todas las pistas, sino
 que pueda jugarlo con el buscador en otra pestaña.
 
+![Captura de pantalla del juego](images/captura_pantalla.png)
+
 ## Área para docentes
 
 El juego tiene un "área docente". Allí, cada docente puede crearse una cuenta,
